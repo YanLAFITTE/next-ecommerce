@@ -24,7 +24,7 @@ export default async function SearchPage({
         { description: { contains: query, mode: "insensitive" } },
       ],
     },
-    orderBy: { id: "asc" },
+    orderBy: { id: "desc" },
   });
 
   if (products.length === 0) {
